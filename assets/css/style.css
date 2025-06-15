@@ -5,18 +5,35 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.title-menu:hover{
+    color: #00DD00;
+    cursor: pointer;
+}
+
 li{
     list-style: none;
 }
+li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+li a:hover{
+    color: #00DD00;
+}
 
-a{
+a.btn-whatsapp{
     text-decoration: none;
     color: #FFFFFF;
     font-size: 1rem;
+    font-weight: 700;
+    background-color: #00DD00;
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 1.5rem;
 }
 
-a:hover{
-    color: #00DD00;
+a.btn-whatsapp:hover{
+    scale: 1.05;
+    color: #FFFFFF;
 }
 
 header{
@@ -31,11 +48,68 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+.ul-menu{
+    display: flex;
+    gap: 1rem;
+}
 
 .svg-icon{
+    display: none;
     height: 20px;
     cursor: pointer;
 }
 .svg-icon:hover{
     height: 25px;
 }
+
+.dropdown-menu{
+    height: 0;
+    display: none;
+    width: 300px;
+    position: absolute;
+    right: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open{
+    height: 240px;
+}
+
+.dropdown-menu li{
+    padding: .7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu a{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+@media (max-width:992px) {
+    .navbar-menu ul, .navbar-menu .btn-whatsapp{
+        display: none;
+    }
+    .dropdown-menu{
+        display: block;
+    }
+    .btn-toggle svg.open-icon{
+        display: block;
+    }
+} 
+
+
+@media (max-width:576px) {
+
+    .dropdown-menu{
+        left: 1rem;
+        width: auto;
+    }
+} 
