@@ -1,45 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reparabrisas | Región Metropolitana</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
-  <header>
-    <!-- Navbar, logo, etc. -->
-     <nav class="navbar-menu">
-        <h1 class="title-menu">Reparabrisas</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Reparación de parabrisas rápida y profesional. Evalúo tu daño por WhatsApp y te doy solución en el día."
+    />
+    <title>Reparabrisas | Reparación rápida y segura</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar-menu">
+        <a href="#inicio" class="title-menu">Reparabrisas</a>
         <ul class="ul-menu">
-          <li><a href="hero">Home</a></li>
-          <li><a href="abou">Servicios</a></li>
-          <li><a href="hero">Evidencia</a></li>
-          <li><a href="hero">Contacto</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
-        <a href="#" class="btn-whatsapp">WhatsApp</a>
-        <div class="btn-toggle">
-          <svg  class="svg-icon icon-close" fill="white"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
-          <svg  class="svg-icon icon-burger open-icon" fill="white" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+        <a href="https://wa.me/56912345678" class="btn-whatsapp" target="_blank" rel="noopener noreferrer"
+          >WhatsApp</a
+        >
+        <button class="btn-toggle" aria-label="Abrir menú móvil">
+          <svg
+            class="svg-icon icon-close"
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+          >
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+            />
+          </svg>
+          <svg
+            class="svg-icon icon-burger open-icon"
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </button>
+      </nav>
+
+      <ul class="dropdown-menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li>
+          <a href="https://wa.me/56912345678" class="btn-whatsapp" target="_blank" rel="noopener noreferrer"
+            >Escribir por WhatsApp</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-content">
+          <p class="pill">Atención rápida en tu zona</p>
+          <h1>Reparación de parabrisas en el día, sin cambiar todo el vidrio</h1>
+          <p>
+            Recupera visibilidad y evita que la grieta crezca. Envíame una foto por WhatsApp y te indico si
+            tu parabrisas se puede reparar.
+          </p>
+          <div class="hero-actions">
+            <a href="https://wa.me/56912345678" class="btn-whatsapp" target="_blank" rel="noopener noreferrer"
+              >Cotizar por WhatsApp</a
+            >
+            <a href="#servicios" class="btn-secondary">Ver servicios</a>
+          </div>
         </div>
-     </nav>
-     <div class="dropdown-menu">
-          <li><a href="hero">Home</a></li>
-          <li><a href="abou">Servicios</a></li>
-          <li><a href="hero">Evidencia</a></li>
-          <li><a href="hero">Contacto</a></li>
-          <li><a href="#" class="btn-whatsapp">WhatsApp</a></li>
-     </div>
-  </header>
+      </section>
 
-  <main>
-    <!-- Hero, servicios, beneficios, formulario, etc. -->
-  </main>
+      <section class="section" id="servicios">
+        <div class="section-heading">
+          <h2>Servicios que realizo</h2>
+          <p>Soluciones para impactos, fisuras pequeñas y prevención de grietas mayores.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Reparación de piquetes</h3>
+            <p>Elimino o reduzco daños por piedras antes de que se extiendan por vibración o temperatura.</p>
+          </article>
+          <article class="card">
+            <h3>Sellado de microfisuras</h3>
+            <p>Aplicación de resina especializada para reforzar la zona y mejorar la visibilidad.</p>
+          </article>
+          <article class="card">
+            <h3>Evaluación técnica</h3>
+            <p>Te digo con honestidad si conviene reparación o reemplazo según tamaño y ubicación del daño.</p>
+          </article>
+        </div>
+      </section>
 
-  <footer>
-    <!-- Enlaces, contacto, RRSS -->
-  </footer>
+      <section class="section" id="videos">
+        <div class="section-heading">
+          <h2>Videos de trabajos reales</h2>
+          <p>Mira resultados antes y después en vehículos de clientes.</p>
+        </div>
+        <div class="video-grid">
+          <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Video de reparación 1" loading="lazy" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" title="Video de reparación 2" loading="lazy" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Video de reparación 3" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </section>
 
-  <script src="assets/js/main.js"></script>
-</body>
+      <section class="section contact" id="contacto">
+        <div class="section-heading">
+          <h2>Contacto</h2>
+          <p>Escríbeme y coordinamos tu atención.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>WhatsApp</h3>
+            <p>Respuesta rápida para cotizar y agendar.</p>
+            <a href="https://wa.me/56912345678" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">Abrir chat</a>
+          </div>
+          <div class="contact-card">
+            <h3>Horario</h3>
+            <p>Lunes a sábado<br />08:00 a 19:00 hrs</p>
+          </div>
+          <div class="contact-card">
+            <h3>Cobertura</h3>
+            <p>Servicio en Región Metropolitana y alrededores.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <a href="https://wa.me/56912345678" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
+      WhatsApp
+    </a>
+
+    <footer>
+      <p>© 2026 Reparabrisas. Servicio profesional de reparación de parabrisas.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
