@@ -59,6 +59,14 @@ a {
   margin: 0;
 }
 
+.ul-menu a {
+  transition: color 0.2s ease;
+}
+
+.ul-menu a:hover {
+  color: #9bf2b9;
+}
+
 .btn-whatsapp {
   background: var(--accent);
   color: #fff;
@@ -74,9 +82,16 @@ a {
 }
 
 .btn-secondary {
+  display: inline-block;
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 0.65rem 1rem;
   border-radius: 999px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.45);
 }
 
 .btn-toggle {
@@ -119,7 +134,7 @@ a {
 }
 
 .dropdown-menu.open {
-  height: 270px;
+  height: 320px;
 }
 
 .hero {
@@ -194,6 +209,12 @@ h1 {
   padding: 1rem;
 }
 
+.card-with-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .card p,
 .contact-card p {
   color: var(--muted);
@@ -249,4 +270,7 @@ footer {
   .dropdown-menu {
     display: block;
   }
+}
+.text-center{
+    text-align: center;
 }
