@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-# La URL absoluta del sitemap se agrega al configurar el dominio definitivo.
+Sitemap: https://reparabrisasnorte.cl/sitemap.xml
